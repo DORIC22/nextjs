@@ -32,10 +32,10 @@ const Login = () => {
     // (onChange - при изменении текста)
 
     return (
-        <div>
+        <div className={''}>
             {alertMessage && <Alert message={alertMessage} duration={3000} />} {/* Показ Alert, если есть сообщение */}
             <form
-                className={"bg-white shadow-2xl min-h-1/3 min-w-1/3 p-6 rounded-lg"}
+                className={"bg-white shadow-2xl p-6 rounded-lg"}
                 onSubmit={handleSubmit} // Обрабатываем отправку формы
             >
                 <div className={"w-full"}>
